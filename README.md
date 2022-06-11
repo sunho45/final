@@ -3,7 +3,7 @@
 ## 회귀식 추정에 대하여
 
 
-![image](https://user-images.githubusercontent.com/100903674/173190695-07380a11-b96d-4f33-aa57-53328f08b880.png)
+<img src="https://user-images.githubusercontent.com/100903674/173190695-07380a11-b96d-4f33-aa57-53328f08b880.png" width="350" height="350">
 
 x=선호의 공부시간 y=선호의 성적이라고 가정한다.
 
@@ -20,8 +20,9 @@ x=선호의 공부시간 y=선호의 성적이라고 가정한다.
 
 
 ## 선형회귀 알고리즘
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/100903674/173194264-19d42cb6-12ad-4b58-9cd5-56d594932d01.gif)
 
-![bandicam_2022-06-12_00-13-37-327_AdobeExpress (1)](https://user-images.githubusercontent.com/100903674/173193945-b312134f-6e0f-461e-abc0-88944aee41e6.gif)
+
 
 
 
