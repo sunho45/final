@@ -23,6 +23,6 @@ x=선호의 공부시간 y=선호의 성적이라고 가정한다.
 
 
 
-![회귀_AdobeExpress](https://user-images.githubusercontent.com/100903674/173193257-fd79e1a1-e727-446a-a594-b78eb530fe69.gif)
+
 
 
