@@ -11,7 +11,9 @@ x=선호의 공부시간 y=선호의 성적이라고 가정한다.
 
 다음과 같은 데이터가 주어진다면
 
-![image](https://user-images.githubusercontent.com/100903674/173190895-e0e36b58-0d2a-494c-b1ab-a74d80df4d86.png)
+<img src="https://user-images.githubusercontent.com/100903674/173190895-e0e36b58-0d2a-494c-b1ab-a74d80df4d86.png" width="350" height="350">
+
+
 
 위의 그림과 같이 직선을 그을 수 있다.
 
