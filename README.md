@@ -23,9 +23,8 @@ x=선호의 공부시간 y=선호의 성적이라고 가정한다.
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/100903674/173194264-19d42cb6-12ad-4b58-9cd5-56d594932d01.gif)
 
 
-
-
-
-
+```
+y=4.444x+1.3297
+```
 
 
