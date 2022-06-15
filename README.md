@@ -78,8 +78,17 @@ $u=t=-1과 1 사이의 난수 ,da=기울기의 이웃해, db=y절편의 이웃�
 
 쇳물의 분자가 담금질되어 활발한 운동상태에서 식어 움직임이 둔해지는 것과 비슷하게 시간이 지날수록 온도가 낮아져 기존 변수에서 랜덤으로 최적해의 범위를 찾는 범위를 줄이기 위해 이웃해를 위와  정의해 보았다. 
 
-
-
+#### 오차 고려(기울기만 고려 ,예측식의  y절편은 0으로 가정)
+```
+predict=a*dx;
+predictl=da*dx;
+realgap=predict-dy;
+mse=mean((realgap).^2);
+realgapl=predictl-dy;
+msel=mean((realgapl).^2);
+d=msel-mse;
+```
+$ predict=기존기울기를 가진 직선, predictl=이웃해를 기울기로 가진 직선 ,realgap=기존직선과 실제 데이터의 차이(오차), realgapl=이웃해를 기울기로 가진 직선과 실제 데이터의 차이(오차),mse=realgap의 제곱의 평균,msel=realgapl의 제곱의 평균 d=msel과 mse의 차이 
 
 ## 선형회귀 알고리즘의 실행과 결과 
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/100903674/173194264-19d42cb6-12ad-4b58-9cd5-56d594932d01.gif)
