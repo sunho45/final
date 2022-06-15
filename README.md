@@ -88,7 +88,20 @@ realgapl=predictl-dy;
 msel=mean((realgapl).^2);
 d=msel-mse;
 ```
-$ predict=기존기울기를 가진 직선, predictl=이웃해를 기울기로 가진 직선 ,realgap=기존직선과 실제 데이터의 차이(오차), realgapl=이웃해를 기울기로 가진 직선과 실제 데이터의 차이(오차),mse=realgap의 제곱의 평균,msel=realgapl의 제곱의 평균 d=msel과 mse의 차이 
+$ predict=기존기울기를 가진 직선, predictl=이웃해를 기울기로 가진 직선 ,realgap=기존직선과 실제 데이터의 차이(오차)$
+$realgapl=이웃해를 기울기로 가진 직선과 실제 데이터의 차이(오차),mse=realgap의 제곱의 평균,msel=realgapl의 제곱의 평균 d=msel과 mse의 차이$
+
+```
+d<0이라면 이웃해가 기존기울기보다 우수해이므로 기울기는 이웃해로,d>=0이라면 고정
+```
+
+#### 오차 고려(y절편만 고려 ,예측식의 기울기는 구해졌다고 가정)
+
+
+
+
+
+
 
 ## 선형회귀 알고리즘의 실행과 결과 
 ![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/100903674/173194264-19d42cb6-12ad-4b58-9cd5-56d594932d01.gif)
