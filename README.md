@@ -97,6 +97,28 @@ d<0이라면 이웃해가 기존기울기보다 우수해이므로 기울기는 
 
 #### 오차 고려(y절편만 고려 ,예측식의 기울기는 구해졌다고 가정)
 
+```
+ 
+    realgapl=realgapl+b;
+    realgapll=realgapl+db;
+msel=mean((realgapl).^2);
+msell=mean((realgapll).^2);
+d=msell-msel;
+if(d<0)
+b=db;
+else
+q=rand;
+p=exp(-d/T);
+if(q<p)
+b=db;
+
+end    
+```
+$realgapl=기존직선과 실제 데이터의 차이(오차), realgapll=이웃해를 y절편으로 가진 직선과 실제 데이터의 차이(오차), msel=realgap의 제곱의 평균$ 
+$msell=realgap의 제곱의 평균, d=msell과 msel의 $
+
+
+
 
 
 #### 온도가 식혀지는 식
