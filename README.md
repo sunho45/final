@@ -89,7 +89,8 @@ msel=mean((realgapl).^2);
 d=msel-mse;
 ```
 $ predict=기존기울기를 가진 직선, predictl=이웃해를 기울기로 가진 직선 ,realgap=기존직선과 실제 데이터의 차이(오차)$
-$realgapl=이웃해를 기울기로 가진 직선과 실제 데이터의 차이(오차),mse=realgap의 제곱의 평균,msel=realgapl의 제곱의 평균 d=msel과 mse의 차이$
+$realgapl=이웃해를 기울기로 가진 직선과 실제 데이터의 차이(오차),mse=realgap의 제곱의 평균,msel=realgapl의 제곱의 평균$
+$d=msel과 mse의 차이$
 
 ```
 d<0이라면 이웃해가 기존기울기보다 우수해이므로 기울기는 이웃해로,d>=0이라면 고정
