@@ -146,10 +146,57 @@ T를 일정 비율(냉각률)로 감소시킨다. 정확한 값을 위해 냉각
 ### 오차가 줄어드는 과정
 ![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/100903674/174122811-acc9b767-2c09-414d-b3d1-e1357470f721.gif)
 
+```
+u=-1+2*rand();
+t=-1+2*rand();
+ da=a+T*u;
+ db=b+T*t;
+predict=a*dx;
 
+predictl=da*dx;
+realgap=predict-dy;
+mse=mean((realgap).^2);
 
+realgapl=predictl-dy;
+msel=mean((realgapl).^2);
 
+d=msel-mse;
+if(d<0)
+    a=da;
+    realgapl=realgapl+b;
+    realgapll=realgapl+db;
+msel=mean((realgapl).^2);
+msell=mean((realgapll).^2);
+d=msell-msel;
+if(d<0)
+b=db;
+else
+q=rand;
+p=exp(-d/T);
+if(q<p)
+b=db;
 
+end    
+
+end
+
+else
+  realgap=realgap+b;
+    realgapll=realgap+db;
+msel=mean((realgap).^2);
+msell=mean((realgapll).^2);
+d=msell-msel;
+if(d<0)
+b=db;
+else
+q=rand;
+p=exp(-d/T);
+if(q<p)
+b=db;
+
+end    
+```
+와 같은 과정을 1000번 수행한다. 각 조건에 맞게 최적의 기울기와 y절편을 찾아낸다. 
 
 
 
