@@ -115,8 +115,8 @@ b=db;
 
 end    
 ```
-$realgapl=기존직선과 실제 데이터의 차이(오차), realgapll=이웃해를 y절편으로 가진 직선과 실제 데이터의 차이(오차), msel=realgap의 제곱의 평균$ 
-$msell=realgap의 제곱의 평균, d=msell과 msel의 차이 $
+$realgapl=기존직선과 실제 데이터의 차이(오차), realgapll=이웃해를 y절편으로 가진 직선과 실제 데이터의 차이(오차), msel=realgapl의 제곱의 평균$ 
+$msell=realgapll의 제곱의 평균, d=msell과 msel의 차이 $
 
 ```
 d<0 일경우 이웃해가 기존 y절편보다 우세하므로 y절편은 이웃해로 d>=0이라면 고정한 후 q가 더 나쁜해가 될 확률p보다 작을경우 이웃해가 y 절편이 될 기회를 줌 
